@@ -8,8 +8,8 @@
         <header class="main-header">
             <div class="container">
                 <nav class="site-navigation">
-                    <ul>
-                        <li class="logo-navigation"><a href="#"><img src="#" alt="Nerd's"></a></li>
+                    <a class="logo-navigation" href-="#"><img src="#" alt="Nerd's"></a>
+                    <ul class="item-navigation">
                         <li class="menu-navigation"><a href="#">Студия</a></li>
                         <li class="menu-navigation"><a href="#">Клиенты</a></li>
                         <li class="menu-navigation">Магазин</li>
@@ -28,9 +28,18 @@
       
       <main>
           <div class="container">
-              <div class="filters">
-                  <form class="price">
-                      <input type="range" min="0" max="15000" step="1">
+              <form class="filters">
+                  <fieldset class="price">
+                      <legend class="filtres-name">Стоимость</legend>
+                      <div class="range">
+                          <div class="range__line">
+                              <div class="range__inner">
+                                  <div class="range__point"></div>
+                                  <div class="range__point"></div>
+                              </div>
+                          </div>
+                      </div>
+                      
                       <div class="indicator">
                           <span class="completely">От</span>
                           <input type="text" value="0">
@@ -39,102 +48,104 @@
                           <span class="completely">До</span>
                           <input type="text" value="15000">
                       </div>
-                  </form>
+                  </fieldset>
                   
-                  <form class="net">
-                      <h2 class="title-net">Сетка:</h2>
+                  <fieldset class="net">
+                      <legend class="filtres-name">Сетка:</legend>
                       <input class="variant1" type="radio" name="radioproducts" id="check1"><label for="check1">Адаптивная</label><br>
                       <input class="variant1" type="radio" name="radioproducts" id="check2"><label for="check2">Фиксированная</label><br>
                       <input class="variant1" type="radio" name="radioproducts" id="check3"><label for="check3">Резиновая</label><br>
-                  </form>
+                  </fieldset>
                   
-                  <form class="feature">
-                      <h2 class="title-feature">Особенности:</h2>
+                  <fieldset class="feature">
+                      <legend class="filtres-name">Особенности:</legend>
                       <input class="variant2" type="checkbox" id="check4"><label for="check4">Слайдер</label><br>
                       <input class="variant2" type="checkbox" id="check5"><label for="check5">Блок приемуществ</label><br>
                       <input class="variant2" type="checkbox" id="check6"><label for="check6">Новости</label><br>
                       <input class="variant2" type="checkbox" id="check7"><label for="check7">Галерея</label><br>
                       <input class="variant2" type="checkbox" id="check8"><label for="check8">Корзина</label><br>
-                  </form>
+                  </fieldset>
                   <button type="submit">Показать</button>
-              </div>
+              </form>
               
-              <div class="catalog">
-                  <form class="sorting">
-                      <ul>
-                          <li class="sort">Сортировать:</li>
+              <form class="sorting">
+                  <fieldset class="sort">
+                      <legend class="sort-name">Сортировать:</legend>
+                      <ul class="sort-list">
                           <li class="sort-type1"><a href="#">По цене</a></li>
                           <li class="sort-type2"><a href="#">По типу</a></li>
                           <li class="sort-type2"><a href="#">По названию</a></li>
                           <li class="sort-down"><a href="#"></a></li>
                           <li class="sort-up"><a href="#"></a></li>
                       </ul>
-                  </form>
+                  </fieldset>
+              </form>
+              
+              <div class="products">
+                  <article class="product">
+                      <img src="#" alt="">
+                      <p class="name-product"><b>Sedona</b></p>
+                      <p class="info-product">Информационный сайт для туристов</p>
+                      <a href="#" class="button">9 900 руб.</a>
+                  </article>
                   
-                  <div class="products">
-                      <article class="product">
-                          <a href="#"><img src="#" alt=""></a>
-                          <p class="name-product"><b>Sedona</b></p>
-                          <p class="info-product">Информационный сайт для туристов</p>
-                          <a href="#" class="button">9 900 руб.</a>
-                      </article>
-                      
-                      <article class="product">
-                          <a href="#"><img src="#" alt=""></a>
-                          <p class="name-product"><b></b></p>
-                          <p class="info-product"></p>
-                          <a href="#" class="button"></a>
-                      </article>
-                      
-                      <article class="product">
-                          <a href="#"><img src="#" alt=""></a>
-                          <p class="name-product"><b></b></p>
-                          <p class="info-product"></p>
-                          <a href="#" class="button"></a>
-                      </article>
-                      
-                      <article class="product">
-                          <a href="#"><img src="#" alt=""></a>
-                          <p class="name-product"><b></b></p>
-                          <p class="info-product"></p>
-                          <a href="#" class="button"></a>
-                      </article>
-                      
-                      <article class="product">
-                          <a href="#"><img src="#" alt=""></a>
-                          <p class="name-product"><b></b></p>
-                          <p class="info-product"></p>
-                          <a href="#" class="button"></a>
-                      </article>
-                      
-                      <article class="product">
-                          <a href="#"><img src="#" alt=""></a>
-                          <p class="name-product"><b></b></p>
-                          <p class="info-product"></p>
-                          <a href="#" class="button"></a>
-                      </article>
-                      
-                      <nav class="navigation-of-pages">
-                          <ul>
-                              <li><a href="#" class="button-pages1">1</a></li>
-                              <li><a href="#" class="button-pages2">2</a></li>
-                              <li><a href="#" class="button-pages2">3</a></li>
-                              <li><a href="#" class="button-pages3">Следующая</a></li>
-                          </ul>
-                      </nav>
-                  </div>
+                  <article class="product">
+                      <img src="#" alt="">
+                      <p class="name-product"><b></b></p>
+                      <p class="info-product"></p>
+                      <a href="#" class="button"></a>
+                  </article>
+                  
+                  <article class="product">
+                      <img src="#" alt="">
+                      <p class="name-product"><b></b></p>
+                      <p class="info-product"></p>
+                      <a href="#" class="button"></a>
+                  </article>
+                  
+                  <article class="product">
+                      <img src="#" alt="">
+                      <p class="name-product"><b></b></p>
+                      <p class="info-product"></p>
+                      <a href="#" class="button"></a>
+                  </article>
+                  
+                  <article class="product">
+                      <img src="#" alt="">
+                      <p class="name-product"><b></b></p>
+                      <p class="info-product"></p>
+                      <a href="#" class="button"></a>
+                  </article>
+                  
+                  <article class="product">
+                      <img src="#" alt="">
+                      <p class="name-product"><b></b></p>
+                      <p class="info-product"></p>
+                      <a href="#" class="button"></a>
+                  </article>
               </div>
+              
+              <nav class="navigation-of-pages">
+                  <ul>
+                      <li><a href="#" class="button-pages1">1</a></li>
+                      <li><a href="#" class="button-pages2">2</a></li>
+                      <li><a href="#" class="button-pages2">3</a></li>
+                      <li><a href="#" class="button-pages3">Следующая</a></li>
+                  </ul>
+              </nav>
           </div>
           
           <div class="map">
               <img src="#" alt="">
-              <div class="contact">
-                  <strong class="name">Nёrds design studio</strong>
-                  <p class="address">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
-                  <p class="phone">тел. +7(812) 275-75-75</p>
-                  <a class="btn-map" href="#">Напишите нам</a>
+              <div class="container">
+                  <div class="contact">
+                      <strong class="name">Nёrds design studio</strong>
+                      <p class="address">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
+                      <p class="phone">тел. +7(812) 275-75-75</p>
+                      <a class="btn btn-map" href="#">Напишите нам</a>
+                  </div>
               </div>
-          </div>
+            </div>
       </main>
       
       <footer class="main-footer">

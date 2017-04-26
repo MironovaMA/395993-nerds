@@ -7,12 +7,12 @@
     <body>
         <header class="main-header">
             <div class="container">
-                <nav class="site-navigation">
-                    <ul>
-                        <li class="logo-navigation"><a href="#"><img src="#" alt="Nerd's"></a></li>
+               <nav class="site-navigation">
+                    <img class="logo" src="#" alt="Nerd's">
+                    <ul class="item-navigation">
                         <li class="menu-navigation"><a href="#">Студия</a></li>
                         <li class="menu-navigation"><a href="#">Клиенты</a></li>
-                        <li class="menu-navigation"><a href="#">Магазин</a></li>
+                        <li class="menu-navigation">Магазин</li>
                         <li class="menu-navigation"><a href="#">Контакты</a></li>
                     </ul>
               </nav>
@@ -20,55 +20,67 @@
               <div class="basket-header">
                   <a class="basket" href="#">Корзина</a>
               </div>
-          </div>
-          
-          <div class="container">
-              <div class="slider-radio">
-                  <input type="radio" name="radioproducts" id="slide-1">
-                  <input type="radio" name="radioproducts" id="slide-2">
-                  <input type="radio" name="radioproducts" id="slide-3">
-              </div>
-              
-              <div class="slide-1">
-                  <span class="name-slide-1"><b>Долго, дорого, скрупулезно</b></span>
-              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-              <a class="btn" href="#">Узнать больше</a>
-          </div>
             </div>
-      </header>
-      
-      <main>
-          <div class="container">
-              <section class="section">
-                  <div class="section-red">
-                      <h2 class="section-red-name">Веб-сайты</h2>
-                      <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                      <a class="btn-red" href="#">Заказать</a>
+        </header>
+        
+        <div class="slider-radio">
+            <label class="enother-class" for="slide-1"></label>
+            <label class="enother-class" for="slide-2"></label>
+            <label class="enother-class" for="slide-3"></label>
+        </div>
+        
+        <input type="radio" class="some-class" name="radioproducts" id="slide-1">
+        <input type="radio" class="some-class" name="radioproducts" id="slide-2">
+        <input type="radio" class="some-class" name="radioproducts" id="slide-3">
+        
+        <div class="slide slide-1">
+            <span class="name-slide-1"><b>Долго, дорого, скрупулезно</b></span>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a class="btn btn-slide-1" href="#">Узнать больше</a>
+        </div>
+        
+        <div class="slide slide-2">
+            <span class="name-slide-2"><b></b></span>
+            <p></p>
+            <a class="btn btn-slide-2" href="#"></a>
+        </div>
+        
+        <div class="slide slide-3">
+            <span class="name-slide-3"><b></b></span>
+            <p></p>
+            <a class="btn btn-slide-3" href="#"></a>
+        </div>
+        
+        <main>
+            <div class="container">
+                <section class="section">
+                    <div class="section-red">
+                        <h2 class="section-red-name">Веб-сайты</h2>
+                        <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                        <a class="btn btn-red" href="#">Заказать</a>
                   </div>
                   
                   <div class="section-green">
                       <h2 class="section-green-name">Приложения</h2>
                       <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                      <a class="btn-green" href="#">Заказать</a>
+                      <a class="btn btn-green" href="#">Заказать</a>
                   </div>
                   
                   <div class="section-yellow">
                       <h2 class="section-yellow-name">Презентации</h2>
                       <p>Вы даже не подозреваете, на сколько вы изумительны!</p>
-                      <a class="btn-yellow" href="#">Заказать</a>
+                      <a class="btn btn-yellow" href="#">Заказать</a>
                   </div>
               </section>
-          </div>
-          
-          <div class="container">
+    
               <div class="features-left">
-                  <h1>Мы - маленькая, но гордая<br>дизайн-студия из Краснодара.</h1>
-                  <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
-                  <p><b>Выполняем заказы на разработку:</b></p>
-                  <ui>
-                      <li class="list">Веб-сайтов любой сложности</li>
-                      <li class="list">Мобильных приложений для IOS и Android</li>
-                      <li class="list">Слайд шоу и видео для корпоративных презентаций</li>
+                  <span class="part1">Мы - маленькая, но гордая дизайн-студия из Краснодара.</span>
+                  <span class="part2">Исповедуем принципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</span>
+                  <span class="part3">Выполняем заказы на разработку:</span>
+                  <ui class="list">
+                      <li class="list-item">Веб-сайтов любой сложности</li>
+                      <li class="list-item">Мобильных приложений для IOS и Android</li>
+                      <li class="list-item">Слайд шоу и видео для корпоративных презентаций</li>
                   </ui>
               </div>
               
@@ -101,13 +113,15 @@
           
           <div class="map">
               <img src="#" alt="">
-              <div class="contact">
-                  <strong class="name">Nёrds design studio</strong>
-                  <p class="address">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
-                  <p class="phone">тел. +7(812) 275-75-75</p>
-                  <a class="btn-map" href="#">Напишите нам</a>
+              <div class="container">
+                  <div class="contact">
+                      <strong class="name">Nёrds design studio</strong>
+                      <p class="address">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
+                      <p class="phone">тел. +7(812) 275-75-75</p>
+                      <a class="btn btn-map" href="#">Напишите нам</a>
+                  </div>
               </div>
-          </div>
+            </div>
       </main>
       
       <footer class="main-footer">
